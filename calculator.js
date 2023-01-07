@@ -7,7 +7,8 @@ const equals = document.querySelector('.equals');
 let answer = 0;
 let num1 = '';
 let num2 = '';
-let operation = '';   
+let operation = '';
+let nextKeyClearsScreen = false;
 
 function add(num1, num2) {
     answer = num1 + num2;
@@ -49,11 +50,17 @@ function calculate() {
     clearScreen();
     // screen.textContent = operate(operation,num1,num2);
     screen.textContent = operate(operation,num1,num2);
-    num1, num2 = '';
+    num1 = '';
+    num2 = '';
+    nextKeyClearsScreen = true;
 }
 
 numbers.forEach(number => {
     number.addEventListener('click', function (e) {
+        if (nextKeyClearsScreen) {
+            clearScreen();
+            nextKeyClearsScreen = false;
+        }
         screen.textContent += e.target.textContent;
     });
 });
