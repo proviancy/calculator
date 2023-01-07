@@ -26,18 +26,31 @@ body {
 
 .buttons, .buttons > div {
     flex: 3 3 80%;
+}
+
+.buttons {
+    margin: 0 5%;
+    width: 95%;
+}
+
+.buttons > div {
     width: 100%;
 }
 
 .screen {
-    width: 85%;
-    flex: 1 1 30px;
+    width: 90%;
+    flex: 1 1 40px;
     margin: 12px;
     background-color: lightgray;
-    font-size: 20px;
+    font-size: 26px;
     justify-content: flex-end;
     align-items: center;
     padding-right: 4px;
+    border-radius: 6px;
+}
+
+.screenText {
+    margin: 0;
 }
 
 button {
@@ -45,6 +58,7 @@ button {
     margin: 4px;
     flex: 1;
     font-size: 26px;
+    border-radius: 4px;
 }
 
 .number {
