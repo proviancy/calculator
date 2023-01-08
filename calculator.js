@@ -82,23 +82,6 @@ operations.forEach(operator => {
             clearScreen();
         }
         operation = e.target.classList[0];
-        // if (num1 == '' || num1 == undefined){
-        //     num1 = Number.parseInt(screen.textContent);
-        //     console.log(num1);
-        //     clearScreen();
-        // } else if (num2 == '' || num2 == undefined) {
-        //     num2 = Number.parseInt(screen.textContent);
-        //     console.log(num2);
-        //     clearScreen();
-        // } else {
-        //     tempNum = Number.parseInt(screen.textContent);
-        //     calculate();
-        //     num1 = screen.textContent;
-        //     num2 = tempNum;
-        //     tempNum = '';
-        //     calculate();
-        //     num1 = Number.parseInt(screen.textContent);
-        // }
     });
 });
 
